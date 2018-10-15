@@ -24,7 +24,7 @@ read n
 	 sum=0
 	 for i in `seq 1 $n`;
 	 do
-	  	 sum=$(($sum + $i))
+	  	 sum=$((sum + i))
 	 done
 	 echo "The total sum -> $sum"
  	 break
