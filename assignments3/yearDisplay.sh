@@ -1,12 +1,10 @@
 #!/bin/bash
 
-
 #Assignment 3
 #Displaying Year
 
 outPutYear () {
-
-	if [ $1 -lt 10 ]; then
+	if [[ $1 -lt 10 ]]; then
 		echo $1
 	else
 		echo $(($1 % 10))

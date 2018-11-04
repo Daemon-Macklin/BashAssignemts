@@ -27,8 +27,11 @@ done
 	((++i))
 done
 
-IFS=$'\n' sorted=($(sort <<<"${numbers[*]}"))
+#Using sort command to sort array
+# -n means to sort numerically
+IFS=$'\n' sorted=($(sort -n <<<"${numbers[*]}"))
 echo "Ascending" "${sorted[@]}"
 
-IFS=$'\n' sorted=($(sort -r <<<"${numbers[*]}"))
+#-r means to reverse the sort
+IFS=$'\n' sorted=($(sort -r -n <<<"${numbers[*]}"))
 echo "Desending" "${sorted[@]}"
